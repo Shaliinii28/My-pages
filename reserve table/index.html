@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Reservation Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        
+        <section class = "banner">
+            <h2>Reserve Your Table Now</h2>
+            <div class = "card-container">
+                <div class = "card-img">
+                    <!-- image here -->
+                </div>
+
+                <div class = "card-content">
+                    <h3>Reservation</h3>
+                    <form>
+						<div class = "form-row">
+							<label for="date">Date:</label>
+                            <input type="date" id="date" name="date" required>
+							<label for="time">Time:</label>
+                            <input type="time" id="time" name="time" min="08:00" max="23:00" required>
+						</div>
+
+							<label for="fullname">Full Name:</label>
+                            <input type = "text" placeholder="Type Here" name="fullname" required>
+							<label for="phoneno">Phone No.:</label>
+                            <input type = "tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-4567-890" name="phoneno" required>
+
+							<label for="persons">No of Persons:</label>
+                            <input type = "number" placeholder="How Many Persons?" min = "1" name="persons" required>
+                            <button class="button" id="button">Book Table</button>
+							
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    </body>
+</html>
